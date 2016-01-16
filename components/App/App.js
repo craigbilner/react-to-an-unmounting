@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import NaughtyComponent from '../../components/NaughtyComponent/NaughtyComponent';
+import PubSubComponent from '../../components/PubSubComponent/PubSubComponent';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      show: true,
+    };
   }
 
   componentDidMount() {
@@ -15,8 +20,17 @@ export default class App extends Component {
   }
 
   render() {
+    if (this.state.show) {
+      return (
+        <div>
+          <NaughtyComponent />
+          <PubSubComponent />
+        </div>
+      );
+    }
+
     return (
-      <NaughtyComponent />
+      <div>nothing to see here</div>
     );
   }
 }
