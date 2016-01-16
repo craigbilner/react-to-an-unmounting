@@ -2,5 +2,8 @@
   "extends": "airbnb",
   "env": {
     "mocha": true
+  },
+  "rules": {
+    "react/display-name": 2
   }
 }
