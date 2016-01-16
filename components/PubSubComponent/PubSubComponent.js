@@ -59,3 +59,5 @@ export default class PubSubComponent extends Component {
     );
   }
 }
+
+PubSubComponent.displayName = 'PubSub';

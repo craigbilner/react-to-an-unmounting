@@ -28,3 +28,5 @@ export default class NaughtyComponent extends Component {
     );
   }
 }
+
+NaughtyComponent.displayName = 'Naughty';
